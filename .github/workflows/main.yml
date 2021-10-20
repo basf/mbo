@@ -18,8 +18,8 @@ jobs:
       - name: Run black, flake8 and isort
         run: |
           pip3 install black isort flake8
-          black --check opti test
-          flake8 --verbose opti test
+          black --check mbo test
+          flake8 --verbose mbo test
           isort . --check-only --verbose
       - name: Run tests
         run: |
