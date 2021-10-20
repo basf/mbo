@@ -1,4 +1,3 @@
-import opti
 from opti.problems import ZDT1, Hyperellipsoid, Sphere
 
 from mbo.algorithm import RandomSearch
