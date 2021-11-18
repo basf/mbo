@@ -8,4 +8,4 @@ def test_init():
     problem = ZDT1(n_inputs=3)
     problem.create_initial_data(6)
     optimizer = Algorithm(problem)
-    assert len(optimizer.problem.data) == 6
+    assert len(optimizer.problem.get_data()) == 6

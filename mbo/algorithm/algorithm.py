@@ -75,7 +75,7 @@ class Algorithm:
 
         for _ in range(n_steps):
             X = self.propose(n_proposals)
-            Y = self.problem.eval(X)
+            Y = self.problem.f(X)
             self.add_data_and_fit(pd.concat([X, Y], axis=1))
 
     def get_model_parameters(self) -> pd.DataFrame:

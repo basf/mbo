@@ -41,6 +41,6 @@ setup(
     python_requires=">=3.7",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=["mopti", "numpy", "pandas", "scipy>=1.7"],
+    install_requires=["mopti>=0.1.0", "numpy", "pandas"],
     extras_require={"testing": ["pytest"]},
 )

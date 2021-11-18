@@ -12,7 +12,7 @@ def test_unconstrained_problem():
     assert problem.inputs.contains(X).all()
 
     optimizer.run(n_proposals=3, n_steps=10)
-    assert len(optimizer.problem.data) == 30
+    assert len(optimizer.problem.get_data()) == 30
 
     config = optimizer.to_config()
     assert config["method"] == "RandomSearch"
