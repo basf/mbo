@@ -17,7 +17,7 @@ jobs:
           python-version: 3.9
       - name: Run black, flake8 and isort
         run: |
-          pip3 install black isort flake8
+          pip3 install isort==5.10.1 flake8==5.0.4
           flake8 --verbose mbo test
           isort . --check-only --verbose
       - name: Run tests
