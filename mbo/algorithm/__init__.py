@@ -3,7 +3,6 @@
 from loguru import logger
 
 from mbo.algorithm.algorithm import Algorithm
-from mbo.algorithm.doe import DOptimalDesign
 from mbo.algorithm.random import RandomSearch
 from mbo.algorithm.rf import RandomForest
 

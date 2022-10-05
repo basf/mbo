@@ -52,7 +52,6 @@ setup(
         "pyrff",
         "scikit-learn",
         "tqdm",
-        "basf-doe",
         "formulaic",
     ],
     extras_require={
