@@ -66,10 +66,6 @@ def test_detergent():
     optimizer.run(n_proposals=1, n_steps=2)
     assert len(optimizer.problem.data) == n_initial + 2
 
-    # predict Pareto front
-    front = optimizer.predict_pareto_front(n_points=42)
-    assert len(front) <= 42
-
 
 def test_problem_with_output_constraint():
     problem = opti.problems.Detergent_OutputConstraint()
@@ -86,3 +82,7 @@ def test_problem_with_output_constraint():
     X = optimizer.propose(n_proposals=2)
     assert len(X) == 2
     assert problem.inputs.contains(X).all()
+
+
+if __name__ == "__main__":
+    test_detergent()
