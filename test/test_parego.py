@@ -82,7 +82,3 @@ def test_problem_with_output_constraint():
     X = optimizer.propose(n_proposals=2)
     assert len(X) == 2
     assert problem.inputs.contains(X).all()
-
-
-if __name__ == "__main__":
-    test_detergent()
