@@ -41,6 +41,23 @@ setup(
     python_requires=">=3.7",
     packages=find_packages(),
     include_package_data=True,
-    install_requires=["mopti>=0.1.0", "numpy", "pandas"],
-    extras_require={"testing": ["pytest"]},
+    install_requires=[
+        "click",
+        "loguru",
+        "mopti",
+        "numpy",
+        "pandas",
+        "plotly",
+        "pymoo",
+        "pyrff",
+        "scikit-learn",
+        "tqdm",
+        "formulaic",
+        "hvwfg"
+    ],
+    extras_require={
+        "botorch": ["botorch~=0.6.4", "gpytorch~=1.6.0", "torch~=1.9.0"],
+        "entmoot": ["entmoot>=0.2.2", "gurobipy"],
+        "testing": ["mock", "pytest"]
+    },
 )
